@@ -54,6 +54,7 @@
 
     .dropdown {
         position: static; /* Static positioning for dropdown on mobile */
+        
     }
 
     .burger {
@@ -97,4 +98,16 @@
     .my_card div{
     margin-top: 20px;
     }
+    }
+    @media (max-width:580px)
+    {
+        p{
+            text-align: center;
+        }
+        .content{
+            width: 100%;
+        }
+        h2{
+            width: 100%;
+        }
     }
