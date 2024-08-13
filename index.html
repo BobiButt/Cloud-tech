@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEAF OS</title>
+    <link rel="icon" type="image" href="LEAf.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="media.css">
+    <script src="index.js" defer></script>
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><img src="LEAf.png" alt="">
+                <h3>LEAF OS</h3>
+            </div>
+            <div>
+                <ul class="nav-links">
+                    <ul style="display: flex;" id="nav_link_1">
+                        <li class="med_search"><center><input type="search" placeholder="   SEARCH..."><button type="submit" onclick="Alrt()">Search</button></center></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li>
+                            <a href="#services">Services</a>
+                            <ul class="dropdown">
+                                <li><a href="#service1"><i class="fa fa-user" aria-hidden="true"></i> View Profile</a>
+                                </li>
+                                <li><a href="#service2"><i class="fa fa-cog" aria-hidden="true"></i> Settings</a></li>
+
+                                <li><a href="#service3" class="sr" onclick="log()"><i class="fa fa-sign-out"
+                                            aria-hidden="true"></i> LogOut</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="nav_links2">
+                <li id="my_nav_last">
+                    <input type="text" name="search" id="search" placeholder="   SEARCH....">
+                    <button class="BS" type="submit" value="submit" onclick="Alrt()">SUBMIT</button>
+
+                </li>
+            </div>
+
+
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="sidebar" class="sidebar">
+            <div class="sd_logo">
+                <center><img src="LEAf.png" alt=""></center>
+                <hr>
+            </div>
+
+            <ul class="sd_lis">
+                <li class="sd_logo_li_1">
+                    <div class="sd_logo_li_a" style="justify-content: center; display: flex; align-items: center;">
+                        <div>
+                            <img src="my_logo-removebg-preview.png" style="display: block;" alt="" height="50px"
+                                width="50px">
+                        </div>
+                        <div> <a href="" style="padding-top: 10px;padding-left: 5px;">Team 1</a></div>
+                    </div>
+                </li>
+                <li class="sd_li"><a href="#home">Home</a></li>
+                <li class="sd_li"><a href="#services">Services</a></li>
+                <li class="sd_li"><a href="#clients">Clients</a></li>
+                <li class="sd_li"><a href="#contact">ScreenShots</a></li>
+                <li class="sd_li"><a href="#about">Community</a></li>
+                <li class="sd_li_f"><img src="phone/android-removebg-preview.png" alt="" class="sd_li_f_img"><a
+                        href="#footer">BOBI BUTT<br>BRAND</a></li>
+                <!-- Add more links as needed -->
+                <!-- <li><a href="#link1">Link 1</a></li>
+                    <li><a href="#link2">Link 2</a></li>
+                    <li><a href="#link3">Link 3</a></li>
+                    <li><a href="#link4">Link 4</a></li>
+                    <li><a href="#link5">Link 5</a></li>
+                    <li><a href="#link6">Link 6</a></li>
+                    <li><a href="#link7">Link 7</a></li>
+                    <li><a href="#link8">Link 8</a></li>
+                    <li><a href="#link9">Link 9</a></li>
+                    <li><a href="#link9">Link 9</a></li>
+                    <li><a href="#link9">Link 9</a></li>
+                    <li><a href="#link9">Link 9</a></li>
+                    <li><a href="#link9">Link 9</a></li>
+                    <li><a href="#link9">Link 9</a></li>
+                    <li><a href="#link9">Link 9</a></li>
+                    <li><a href="#link9">Link 9</a></li>
+                    <li><a href="#link9">Link 9</a></li>
+                    <li><a href="#link9">Link 9</a></li>
+                    <li><a href="#link9">Link 9</a></li>
+                    <li><a href="#link9">Link 9</a></li>
+                    <li><a href="#link9">Link 9</a></li>
+                    <li><a href="#link9">Link 9</a></li>
+                    <li><a href="#link9">Link 9</a></li>
+                    <li><a href="#link9">Link 9</a></li>
+                    <li><a href="#link9">Link 9</a></li>
+                    <li><a href="#link9">Link 9</a></li>
+                    <li><a href="#link9">Link 9</a></li>
+                    <li><a href="#link9">Link 9</a></li>
+                    <li><a href="#link9">Link 9</a></li>
+                    <li><a href="#link9">Link 9</a></li>
+                    <li><a href="#link9">Link 9</a></li>
+                    <li><a href="#link9">Link 9</a></li>
+                    <li><a href="#link9">Link 9</a></li>
+                    <li><a href="#link9">Link 9</a></li> -->
+            </ul>
+        </div>
+        <div class="content">
+            <div
+                style="background-image: url(phone/back\ green.jpeg); background-repeat: no-repeat; background-size: cover; padding: 30px;">
+                <button id="toggleBtn" class="btn">☰</button>
+                <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+                    <div style="width: 50%; padding-bottom: 30px;" class="leaf_content">
+
+
+                        <h1>Welcome to the LeafOS!</h1>
+                        <p>LeafOS is a no-nonsense custom ROM designed to give you exactly what you need without the
+                            fluff.<br> We've cut out the unnecessary clutter and included only the essentials, so you
+                            get a clean, efficient Android experience.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus
+                            sequi voluptas animi non fugit veniam itaque! Alias rem minima
+                            obcaecati perspiciatis veritatis, ea, exercitationem, temporibus
+                            ab dolores asperiores qui itaque! Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Nobis cum autem, ut facere totam
+                            suscipit molestiae alias doloremque sit sapiente dicta
+                            consectetur nesciunt. Ducimus molestias repudiandae libero
+                            possimus fugit maxime. Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Necessitatibus consequuntur error explicabo
+                            magnam, officia, sint vel itaque deserunt asperiores fugit
+                            molestias sed pariatur nam voluptatum, aliquid consequatur
+                            dolorem dolor corrupti. Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit. Neque corporis quia culpa odio praesentium
+                            eaque? Reprehenderit, minima velit! Veniam quis labore dolor
+                            necessitatibus numquam iusto reprehenderit quae nostrum
+                            perspiciatis harum!</p>
+                    </div>
+                    <div class="main_img">
+                        <img src="phone/android-removebg-preview.png" alt="">
+                    </div>
+                </div>
+
+                <div class="my_card">
+                    <div>
+                        <img src="phone/A12.jpeg" alt="">
+                        <h3 for="">Android 12</h3>
+                        <p>This is demo writing. Don't dare to find any mistake from it. just tell me how it is or how i
+                            can improve it.</p>
+                    </div>
+                    <div>
+                        <img src="phone/A13.jpeg" alt="">
+                        <h3 for="">Android 13</h3>
+                        <p>This is demo writing. Don't dare to find any mistake from it. just tell me how it is or how i
+                            can improve it.</p>
+                    </div>
+                    <div>
+                        <img src="phone/A14.jpeg" alt="">
+                        <h3 for="">Android 14</h3>
+                        <p>This is demo writing. Don't dare to find any mistake from it. just tell me how it is or how i
+                            can improve it.</p>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin: 60px 20%;">
+            <div class="SSM">
+                <div class="SSM_head">
+                    <h3>SCREENSHOT</h3>
+                </div>
+            </div>
+            <div class="SS">
+                <div class="SS_d">
+                    <img src="phone/screenshot-1.webp" alt="">
+                </div>
+                <div class="SS_d">
+                    <img src="phone/screenshot-11.webp" alt="">
+
+                </div>
+                <div class="SS_d">
+                    <img src="phone/screenshot-2.webp" alt="">
+
+                </div>
+
+                <div class="SS_d">
+                    <img src="phone/screenshot-15.webp" alt="">
+
+                </div>
+
+            </div>
+            <div class="SS">
+                <div class="SS_d">
+                    <img src="phone/screenshot-31.webp" alt="">
+                </div>
+                <div class="SS_d">
+                    <img src="phone/screenshot-34.webp" alt="">
+
+                </div>
+                <div class="SS_d">
+                    <img src="phone/screenshot-4.webp" alt="">
+
+                </div>
+
+                <div class="SS_d">
+                    <img src="phone/screenshot-15.webp" alt="">
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+</body>
+<footer style="text-align: center;">
+    <div
+        style="height: 50px; background-color: black; position: fixed;bottom: 0%; color: white; width: 100%;padding-top: 15px;">
+        @Copyright 2024</div>
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const sidebar = document.getElementById('sidebar');
+        const toggleBtn = document.getElementById('toggleBtn');
+        const body = document.body;
+
+        toggleBtn.addEventListener('click', () => {
+            body.classList.toggle('sidebar-open');
+        });
+    });   
+</script>
+
+</html>

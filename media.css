@@ -1,0 +1,100 @@
+@media (max-width: 934px) {
+    .nav-links {
+        display: none; /* Hide nav links by default on mobile */
+        flex-direction: column; /* Arrange links in a column */
+        width: 100%; /* Full width for nav */
+        position: absolute; /* Position nav links absolutely */
+        top: 70px; /* Position below the navbar */
+        /* left: 0; */
+        right: 0px;
+        /* background: greenyellow; Background color for nav */
+        /* background-image: url(nav\ hover.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover; */
+    background-color: rgb(204, 255, 187);
+        
+       
+    }
+    #nav_link_1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* ---------------------------------------------------------------------------------------------------------- */
+.nav-links2{
+    display: none;
+    background-color: aqua;
+}
+    #my_nav_last{
+        display: none; /* Hide nav links by default on mobile */
+        flex-direction: column; /* Arrange links in a column */
+        width: 100%; /* Full width for nav */
+        position: absolute; /* Position nav links absolutely */
+        top: 50px; /* Position below the navbar */
+        left: 0;
+        background: #333; /* Background color for nav */
+    }
+.med_search{
+    display:block ;
+}
+
+    .nav-links.nav-active {
+        display: flex; /* Display nav links when active */
+    }
+
+    .nav-links li {
+        margin: 0; /* Remove margin for nav items */
+    }
+
+    .nav-links a {
+        padding: 20px; /* Padding for nav items */
+        display: block; /* Make nav items block elements */
+        text-align: center; /* Center align nav items */
+    }
+
+    .dropdown {
+        position: static; /* Static positioning for dropdown on mobile */
+    }
+
+    .burger {
+        display: block; /* Show burger menu on mobile */
+    }
+    .my_card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .my_card div{
+        align-items: center;
+        margin: auto;
+        text-align: center;
+        border-bottom: 1px solid grey;
+    }
+    .my_card div h3,p{
+        width: 100%;
+    }
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+@media(max-width:830px ){
+    .my_card{
+    display: flex;
+    flex-direction: column;
+    }
+    .my_card div{
+    margin-top: 20px;
+    }
+    }
