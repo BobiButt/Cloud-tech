@@ -20,22 +20,22 @@
             <div class="logo"><img src="LEAf.png" alt="">
                 <h3>LEAF OS</h3>
             </div>
-            <div>
-                <ul class="nav-links">
+            <div >
+                <ul class="nav-links" style="transition: all 2s ease;">
                     <ul style="display: flex;" id="nav_link_1">
                         <li class="med_search"><center><input type="search" placeholder="   SEARCH..."><button type="submit" onclick="Alrt()">Search</button></center></li>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li>
                             <a href="#services">Services</a>
-                            <ul class="dropdown">
+                           <center><ul class="dropdown">
                                 <li><a href="#service1"><i class="fa fa-user" aria-hidden="true"></i> View Profile</a>
                                 </li>
                                 <li><a href="#service2"><i class="fa fa-cog" aria-hidden="true"></i> Settings</a></li>
 
                                 <li><a href="#service3" class="sr" onclick="log()"><i class="fa fa-sign-out"
                                             aria-hidden="true"></i> LogOut</a></li>
-                            </ul>
+                            </ul></center> 
                         </li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -227,7 +227,7 @@
 </body>
 <footer style="text-align: center;">
     <div
-        style="height: 50px; background-color: black; position: fixed;bottom: 0%; color: white; width: 100%;padding-top: 15px;">
+        style="height: 50px; background-color: black; position: fixed;bottom: 0%; color: white; width: 100%;padding-top: 15px; z-index: 1;">
         @Copyright 2024</div>
 </footer>
 <script>
